@@ -28,7 +28,7 @@ const renderer = new THREE.WebGLRenderer({alpha: true});
 renderer.setSize(window.innerWidth, window.innerHeight);
 document.body.append(renderer.domElement);
 
-// var controls = new OrbitControls(camera, renderer.domElement);
+var controls = new THREE.OrbitControls( camera );
 
 const tick = () => {
   window.requestAnimationFrame(tick)
